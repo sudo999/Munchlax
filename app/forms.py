@@ -10,4 +10,4 @@ class AddressForm(Form):
 class PreferencesForm(Form):
     NumberParty = TextField('numbParty', validators = [Required()])
     MaxMoney = BooleanField('maxMoney', default = false)
-    Allergies = TextField('allegies', validators = [Required()])
+    Allergies = TextField('allergies', validators = [Required()])
