@@ -3,6 +3,6 @@ from wtforms import TextField, BooleanField
 from wtforms.validators import Required
 
 class AddressForm(Form):
-    Address = TextField('address', validators = [Required()])
-    City = TextField('city', validators = [Required()])
-    Zip = TextField('zip', validators = [Required()])
+    address = TextField('address', validators = [Required()])
+    city = TextField('city', validators = [Required()])
+    zip = TextField('zip', validators = [Required()])
