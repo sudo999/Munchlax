@@ -1,1 +1,17 @@
 {% extends 'template.html' %}
+
+{% block form %}
+<h1>Enter your address:</h1>
+<form action="" method="post" name="login">
+    {{form.hidden_tag()}}
+    <p>
+        Address:<br>
+        {{form.address(size=80)}}<br>
+    </p>
+    City:<br>
+    <p>{{form.city(size=80)}}<br></p>
+    Zip:<br>
+    <p>{{form.zip(size=80)}}<br></p>
+    <p><input type="submit" value="Submit"></p>
+</form>
+{% endblock %}
