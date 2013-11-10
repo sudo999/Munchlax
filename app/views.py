@@ -1,6 +1,6 @@
+from app import app
 from flask import render_template
 from forms import AddressForm
-from app import app
 
 @app.route('/')
 def home():
@@ -9,4 +9,4 @@ def home():
 @app.route('/order', methods = ['GET','POST'])
 def order():
   form = AddressForm()
-  return(render_template('order.html',form=form)
+  return render_template('order.html',form=form)
